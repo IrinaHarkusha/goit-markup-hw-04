@@ -169,11 +169,6 @@ span {
     background-color: var(--secondary-background-color);
 }
 
-
-
-
-
-
 .icon-antenna::before {
     background-image: url(../images/antenna.svg);
 }
@@ -185,8 +180,6 @@ span {
 }
 .icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
-
-    
 }
 
 .headline {
@@ -278,14 +271,6 @@ img {
     margin-left: 24px;
     width: calc((100% - 72px) / 4);
 }
-
-
-
-
-
-
-
-
 
 .link-instagram {
     background-image: url(../images/instagram.svg);
