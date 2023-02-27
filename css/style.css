@@ -58,7 +58,18 @@ span {
     color: var(--accent-color);
 }
 /* hero */
+
 .words {
+    width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/overlay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/overlay.jpg);
+
     padding: 188px 0;
     text-align: center;
     background-color: var(--brand-color);
@@ -148,6 +159,36 @@ span {
     font-size: 20px;
     line-height: 1.2;
 }
+.stage::before {
+    content: "";
+    display: block;
+    height: 112px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-background-color);
+}
+
+
+
+
+
+
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+
+    
+}
+
 .headline {
     display: none;
 }
@@ -227,6 +268,43 @@ img {
     font-size: 16px;
     line-height: 1.5;
 }
+.list-team {
+    display: flex;
+    height: 40px;
+    
+    outline: 2px solid red;
+}
+.link-team {
+    margin-left: 24px;
+    width: calc((100% - 72px) / 4);
+}
+
+
+
+
+
+
+
+
+
+.link-instagram {
+    background-image: url(../images/instagram.svg);
+}
+.link-twitter {
+    background-image: url(../images/twitter.svg);
+}
+.link-facebook {
+    background-image: url(../images/facebook.svg);
+}
+.link-linkedin {
+    background-image: url(../images/linkedin.svg);
+}
+
+
+
+
+
+
 
 /* footer */
 
