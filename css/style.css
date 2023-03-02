@@ -159,29 +159,14 @@ span {
     font-size: 20px;
     line-height: 1.2;
 }
-.stage::before {
-    content: "";
-    display: block;
-    height: 112px;
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    background-position: center;
+.stage-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--secondary-background-color);
+    height: 112px;
+    margin-bottom: 8px;
 }
-
-.icon-antenna::before {
-    background-image: url(../images/antenna.svg);
-}
-.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-.icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-.icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
-}
-
 .headline {
     display: none;
 }
@@ -254,6 +239,7 @@ img {
     padding: 120px 0;
 }
 .desc {
+    
     text-align: center;
     margin: 0;
 
@@ -261,29 +247,30 @@ img {
     font-size: 16px;
     line-height: 1.5;
 }
-.list-team {
-    display: flex;
-    height: 40px;
-    
-    outline: 2px solid red;
-}
-.link-team {
-    margin-left: 24px;
-    width: calc((100% - 72px) / 4);
+.desc-text {
+    margin-bottom: 8px;
 }
 
-.link-instagram {
-    background-image: url(../images/instagram.svg);
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
-.link-twitter {
-    background-image: url(../images/twitter.svg);
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
 }
-.link-facebook {
-    background-image: url(../images/facebook.svg);
+.social-list-link:hover, 
+.social-list-link:focus {
+    background-color: var(--color-hover);
 }
-.link-linkedin {
-    background-image: url(../images/linkedin.svg);
-}
+
 
 
 
@@ -311,6 +298,30 @@ img {
 
 .quote-link {
     width: 264px;
+}
+
+.social-media {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.social-list-media{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.social-link  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    
 }
 
 
