@@ -8,6 +8,7 @@
     --secondary-color-text: #E7E9FC;
     --color-hover: #404BBF;
     --border-color: #8E8F99;
+    --footer-color-hover: #31D0AA;
 }
 body {
     background-color: var(--white-color);
@@ -185,6 +186,7 @@ span {
 }
 
 .subtitle {
+    text-transform: capitalize;
     margin-bottom: 72px;
 
     color: var(--brand-color);
@@ -278,25 +280,38 @@ img {
     
 }
 
-.link-customers {
-    padding: 16px 32px;
+
+.cust-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 168px;
+    height: 88px;
     border: 1px solid var(--border-color);
-    border-radius: 4px;  
+    border-radius: 4px;
     cursor: pointer;
-}
-.link-customers:hover, .link-customers:focus {
-    border-color: var(--color-hover);
+    
 }
 
-.customers-item .link + .link {
-    margin-left: 24px;
-}
-.customers-icon {
-    fill: var(--border-color);
+.cust-link:hover, .cust-link:focus {
+    border-color: var(--color-hover);
 }
 .customers-icon:hover,.customers-icon:focus {
     fill: var(--color-hover);
 }
+
+.link-customers {
+    margin-left: 24px;
+}
+.link-customers:first-child {
+    margin-left: 0;
+}
+
+.customers-icon {
+    fill: var(--border-color);
+}
+
 
 
 
@@ -355,6 +370,10 @@ img {
     cursor: pointer;
     
 }
+
+.social-link:hover, .social-link:focus {
+    background-color: var(--footer-color-hover);
+}
 .social-item {
     margin-left: 120px;
 }
@@ -362,13 +381,16 @@ img {
 
 
 /* portfolio.html */
+
 /* --brand-color: #2E2F42;
     --main-color-text: #434455;
     --accent-color: #4D5AE5;
     --white-color: #FFFFFF;
     --secondary-background-color: #F4F4FD;
     --secondary-color-text: #E7E9FC;
-    --color-hover: #404BBF; */
+    --color-hover: #404BBF;
+    --border-color: #8E8F99;
+    --footer-color-hover: #31D0AA; */
 
 /* header */
 
@@ -400,8 +422,10 @@ img {
 }
 .btn-group:hover, .btn-group:focus {
     background-color: var(--color-hover);
-    color: var(--white-color);  
+    border-color: var(--color-hover);
+    color: var(--white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 .group-button .btn + .btn {
     margin-left: 24px;
@@ -452,9 +476,8 @@ img {
     padding: 32px 0 32px 16px;
 
 }
-.item-text:hover, .item-text:focus {
+.item-picture:hover, .item-picture:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 
 
